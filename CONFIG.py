@@ -1,0 +1,6 @@
+TESTING = False
+
+WIDTH = 128
+HEIGHT = 32
+
+GAMES_FOLDER = "./GAMES"

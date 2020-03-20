@@ -4,8 +4,7 @@ import sys
 import uos
 from ssd1306_ import FONT_HEIGHT
 from lib import OLED, GAMES_FOLDER, PRG
-
-TESTING = False
+from CONFIG import TESTING
 
 class Menu():
     def __init__(self, splash=True, filename=None):
@@ -55,4 +54,4 @@ def afficher(text, x=0, y=0):
 OLED.contrast(0x15)
 print("-------------------------")
 print("-------------------------")
-g = Menu(filename='game1.py', splash=False) if TESTING else Menu()
+g = Menu(filename='exit', splash=False) if TESTING else Menu()
